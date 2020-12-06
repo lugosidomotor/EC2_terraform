@@ -1,4 +1,4 @@
-#################################### PROVIDER - KEY - ROLE -POLICY - SECURITY GROUP ########################################
+#################################### PROVIDER - KEY - ROLE - POLICY - SECURITY GROUP ########################################
 
 variable "access_key" {
   type = string
@@ -99,7 +99,7 @@ resource "aws_instance" "infra" {
    iam_instance_profile = aws_iam_instance_profile.testenv_profile.name
 
    tags = {
-     Name = "Infa"
+     Name = "Infra"
   }
 
   provisioner "file" {
